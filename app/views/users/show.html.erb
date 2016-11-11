@@ -1,0 +1,59 @@
+<!--<section class="sidebar col-md-5 col-sm-12">-->
+<!--                    <div class="site-info">-->
+<!--                        <div class="primary-info">-->
+<!--                        <h1>Michelle Jones</h1>-->
+<!--                            <p>Just a friendly writer, busy typing away to feed hungry eyes. </p>-->
+<!--                        </div>-->
+<!--                        <div class="secondary-info">-->
+
+<!--                            <p><a class="btn btn-default" href="contact.html"><i class="fa fa-paper-plane"></i>Message</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </section>-->
+
+                <div class="col-md-7 col-sm-12 col-md-offset-5 main-content">
+
+                    <div class="author-bio">
+
+                        <%= image_tag current_user.avatar.url(:thumb), style: "float: none;" %>
+
+                        <div class="author-bio__info">
+                            <h1><%= current_user.name %></h1>
+                            <h4><%= current_user.media %></h4>
+
+                            <p><%= current_user.bio %></p>
+                        </div>
+                    </div>
+                    <p>
+
+                    <h2 class="favorites">Most recent posts</h2>
+
+                    <div class="posts-block animated fadeIn ">
+
+                        <article class="post author-page">
+                            <div class="post-preview col-xs-10  no-gutter">
+                                    <% if @blogs.present? %>
+                                       <% @blogs.each do |blog| %>
+                                      <h2><a href="post.html"><%= blog.title %></a></h2>
+                                      <p><%= truncate(blog.content, length: 200) { link_to "Continue", blog } %></p>
+                                       <% end %>
+                                    <% end %>
+
+                            </div>
+
+                            <div class="col-sm-3 col-md-1 col-md-offset-1 hidden-sm hidden-xs no-gutter">
+                                <p class="meta">
+                                    <span class="time"><i class="fa fa-bookmark"></i> 12</span>
+                                    <span class="min">minutes</span>
+                                </p>
+                            </div>
+                        </article>
+
+                        
+                        <div class="view-all-by-author">
+                            <a href="index.html">View All Post by <%= current_user.name %> <i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div><!-- main content 
+            </div> <!--/row 

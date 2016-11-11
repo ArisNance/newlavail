@@ -1,0 +1,21 @@
+	
+	
+	<div id="thumbnails" class="pt-page  pt-page-current">
+			<div class="scalediv">
+				<div class="row no-gutter" data-id="one">
+					<% blogs.each do |blog| %>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+						<div class="call">
+						<figure class="callpost" data-num="1" style="background-image:url( <%= blog.image.url(:medium) %> );"          data-property="border-width" data-from="0" data-to="35px">
+							<div class="content">
+								<div class="content-wraper">
+									<h2 style="margin-left: 30%; margin-bottom: 10%;"><%= link_to blog.title, blog, {:style => "color: #fff;"} %></h2>
+									<!--<div class="comment-count">27 Comments <i class="fa fa-comments-o"></i> </div>-->
+									<!--<div class="excerpt">Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, </div>-->
+									<!--<div class="postinfo">LIFESTYLE <span>March 15, 2015</span> </div>-->
+								</div>
+							</div>
+						</figure>
+						</div>
+					</div>
+					<% end %>

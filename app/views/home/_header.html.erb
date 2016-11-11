@@ -1,0 +1,118 @@
+<!--<nav class="navbar navbar-default">-->
+<!--  <div class="container-fluid">-->
+    <!-- Brand and toggle get grouped for better mobile display -->
+<!--    <div class="navbar-header">-->
+<!--      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+<!--        <span class="sr-only">Toggle navigation</span>-->
+<!--        <span class="icon-bar"></span>-->
+<!--        <span class="icon-bar"></span>-->
+<!--        <span class="icon-bar"></span>-->
+<!--      </button>-->
+<!--      <%= link_to 'Lavail', root_path, :class => "navbar-brand" %>-->
+<!--    </div>-->
+      <!--<% if user_signed_in? %>-->
+      <!--<%= image_tag current_user.avatar.url(:thumb), class: "img-circle" %>-->
+      <!--<% else %>-->
+      <!--<p>Bye</p>-->
+      <!--<% end %>-->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+<!--    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+<!--      <ul class="nav navbar-nav">-->
+        <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+        <!--<li><a href="#">Link</a></li>-->
+        <!--<li class="dropdown">-->
+        <!--  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+        <!--  <ul class="dropdown-menu">-->
+        <!--    <li><a href="#">Action</a></li>-->
+        <!--    <li><a href="#">Another action</a></li>-->
+        <!--    <li><a href="#">Something else here</a></li>-->
+        <!--    <li role="separator" class="divider"></li>-->
+        <!--    <li><a href="#">Separated link</a></li>-->
+        <!--    <li role="separator" class="divider"></li>-->
+        <!--    <li><a href="#">One more separated link</a></li>-->
+        <!--  </ul>-->
+<!--        </li>-->
+<!--      </ul>-->
+      <!--<form class="navbar-form navbar-left">-->
+      <!--  <div class="form-group">-->
+      <!--    <input type="text" class="form-control" placeholder="Search">-->
+      <!--  </div>-->
+      <!--  <button type="submit" class="btn btn-default">Submit</button>-->
+      <!--</form>-->
+<!--      <ul class="nav navbar-nav navbar-right">-->
+        <!--<li><a href="#">Link</a></li>-->
+<!--        <li class="dropdown">-->
+<!--          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore <span class="caret"></span></a>-->
+<!--          <ul class="dropdown-menu">-->
+<!--            <li>-->
+<!--             <%= link_to 'All', blogs_path %>-->
+<!--            </li>-->
+<!--            <% Category.order('name ASC').each do |category| %>-->
+<!--            <li>-->
+<!--            <%= link_to category.name, category %>-->
+<!--            </li>-->
+<!--            <% end %>-->
+<!--            <li role="separator" class="divider"></li>-->
+<!--              <li>-->
+<!--                <%= link_to 'logout', destroy_user_session_path, method: :delete %>-->
+<!--              </li>-->
+<!--              <li>-->
+<!--                <%= link_to "Edit Account", edit_user_registration_path %>-->
+<!--              </li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div><!-- /.navbar-collapse -->
+<!--  </div><!-- /.container-fluid -->
+<!--</nav>-->
+
+<div id="wraper"> <a href="#" class="smallimg" id="smallimg">Back</a>
+		Top Headerbar area starts 
+		<div id="top-bar">
+			<h1 class="logo">
+                <a href="index.html">Kreative</a></h1> <a class="mobilemenu">View Menu</a> <a class="bt-menu-trigger" id="menu" onclick="landingpagecube();" href="#"><span>Menu</span></a> </div>
+		<nav id="menumobile">
+			<ul>
+				<li><a href="#" onclick="thumbnailscube();">CATEGORIES</a> </li>
+				<li><a href="#" onclick="blogcube()">TRAVEL</a> </li>
+				<li><a href="#" onclick="teamcube()">MUSIC</a> </li>
+				<li><a href="#" onclick="aboutcube();">ABOUT</a> </li>
+				<li><a href="#" onclick="contactcube();">CONTACT</a> </li>
+			</ul>
+			<div class="footer">
+				<ul class="socialpost">
+					<li><a class="" href="#"><i class="fa fa-google"></i></a> </li>
+					<li><a class="" href="#"><i class="fa fa-twitter"></i></a> </li>
+					<li><a class="" href="#"><i class="fa fa-behance"></i></a> </li>
+				</ul>
+				<div class="touch">Lavail 2016 All Rights Reserved.</div>
+			</div>
+		</nav>
+		Top Headerbar area ends 
+		<!--Landing Page Us page area ends -->
+		<div id="landingpage" class="pt-page">
+			<div class="overlay">
+				<nav id="menu">
+					<ul>
+						<li><a href="#" onclick="thumbnailscube();">CATEGORIES</a> </li>
+						<li><a href="#" onclick="blogcube()">TRAVEL</a> </li>
+						<li><a href="#" onclick="teamcube()">MUSIC</a> </li>
+						<li><a href="#" onclick="aboutcube();">ABOUT</a> </li>
+						<li><a href="#" onclick="contactcube();">CONTACT</a> </li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer-box">
+				<div class="col-xs-12 col-sm-6">
+					<ul class="socialpost">
+						<li><a class="" href="#"><i class="fa fa-google"></i></a> </li>
+						<li><a class="" href="#"><i class="fa fa-twitter"></i></a> </li>
+						<li><a class="" href="#"><i class="fa fa-behance"></i></a> </li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<div class="touch">All Rights Reserved. Developed by <a href="https://www.twitter.com/arisnance" class="link"><b> Aris Nance</b></a> </div>
+				</div>
+			</div>
+		</div>
+		<!--Landing page area ends -->

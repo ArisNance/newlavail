@@ -1,0 +1,117 @@
+<!--<p id="notice"><%= notice %></p>-->
+
+
+<!--<%= link_to 'Edit', edit_blog_path(@blog) %> |-->
+<!--<%= link_to 'Back', blogs_path %>-->
+<!--    <body>-->
+        <!-- if the user has javascript disabled they can still use the menu -->
+<!--        <div class="grid intro valign-wrapper no-margin center img-responsive" style="background-image: url('<%= @blog.image.url %>');background-position: center !important; background-repeat: no-repeat; background-size: cover !important; height: 800px; margin-top: 2% !important;">-->
+<!--            <div class="row blog-header">-->
+<!--                <h3 class="blogT"><%= @blog.title %></h3>-->
+<!--                <h5 class="blogD"><%= @blog.description %></h5>-->
+<!--            </div>-->
+<!--         </div>-->
+
+<!--        <main class="">-->
+<!--            <div class="row">-->
+<!--                <div class="col-xs-12 single-content">-->
+<!--                    <p class="meta">-->
+
+
+<!--                    <h1><%= link_to @blog.title, blog_path  %></h1>-->
+<!--                    <% if current_user %>-->
+<!--                    <%= link_to 'Edit', edit_blog_path(@blog) %> |-->
+<!--                    <%= link_to 'Back', blogs_path %>-->
+<!--                    <% else %>-->
+<!--                    <% end %>-->
+<!--                    <p class="subtitle"><%= @blog.description %></p>-->
+
+<!--                    <p><%= @blog.content %></p>-->
+
+<!--                </div><!-- main-content/col -->
+<!--            </div> <!--/row -->
+
+<!--        </main> <!-- / -->
+
+<!--        <footer class="single">-->
+<!--            <div class="">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-xs-12 col-sm-2">-->
+<!--                        <img src="img/profile-1.jpg" class="user-icon " alt="user-image">-->
+<!--                    </div>-->
+<!--                    <div class="col-xs-12 col-sm-6">-->
+<!--                        <div class="category-list">-->
+<!--                            <p>Published By: <%= link_to @blog.user.name, static_pages_author_path(@blog.user) %></p><span><%= @blog.created_at.strftime("%d %b. %Y"); %></span></p>-->
+                            
+                          <!--username-->
+<!--                            <h6><%= link_to "Share on Twitter", "http://twitter.com/home?status=#{@blog.title} #{blog_url(@blog)}" %></h6>-->
+<!--                        </div>-->
+<!--                    </div><!-- end col -->
+<!--                    <div class="col-xs-12 col-sm-4">-->
+<!--                        <div class="social">-->
+<!--                            <p>give a cup of coffee.</a>-->
+<!--                            <div class="social-links">-->
+<!--                                <a class="social-icon" href="#" data-platform="twitter" data-message="Message about this post" data-url="http://writertheme.com/post"><i class="fa fa-twitter"></i></a>-->
+
+<!--                                <a class="social-icon" href="#" data-platform="facebook" data-message="Message about this post" data-url="http://writertheme.com/post"><i class="fa fa-facebook-official"></i></a>-->
+
+<!--                                <a class="social-icon" data-platform="mail"  href="mailto:support@writertheme.com"><i class="fa fa-envelope"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div><!-- end row -->
+<!--            </div>-->
+<!--        </footer>-->
+<style>
+    @media (min-width: 400px) {
+  /* line 31, ../sass/_type.sass */
+  .cCstom {
+  }
+}
+
+.cCustom {
+  width: 74%;
+  margin-left: 11%;
+}
+
+</style>
+<div class="cCustom">
+<div class="container">
+<section> <%= link_to 'Home', root_path, {:class => "logo-show"} %><a class="next"></a>
+					<div class="contentRight">
+						<div class="postcontentarea">
+							<div class="post">
+								<div class="content-r-inner">
+									<div class="blogheader"><%= link_to 'Back', blogs_path %>
+										<h2 class="blogtitle"><%= @blog.title %></h2>
+										<div class="blogmetainfo">Published by: <b><%= @blog.user.name %></b> <span class="infodivider">/</span><%= @blog.created_at.strftime("%d %b. %Y"); %>  <span class="infodivider">/</span><%= link_to "Tweet", "http://twitter.com/home?status=#{@blog.title} #{@blog.description} #{blog_url(@blog)}" %></div>
+									</div>
+									<br>
+									<br>
+									<div class="col-md-6">
+										<div class="blogdata"> <span class="firstharacter"><span class="infodivider">/</span><b><%= link_to "Tweet", "http://twitter.com/home?status=#{@blog.title} #{@blog.description} #{blog_url(@blog)}" %></b><span class="infodivider">/</span></span><%= @blog.content %>
+											<br>
+											<br>
+											<div class="blog-short-info"></div>
+											<br>  </div>
+									</div>
+									<div class="col-md-6">
+										<div class="blogdata"><%=raw @blog.content %></div>
+									</div>
+									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 comments-section">
+										<div class="comment featured-cmt">
+											<div class="comt-pic"><%= image_tag @blog.user.avatar.url(:thumb), style: "float: none;" %></div>
+											<div class="comt-author">
+												<h4><%= @blog.user.name %></h4> <span class="comt-date"><%= @blog.created_at.strftime("%d %b. %Y"); %></span> </div>
+											<div class="comt-txt">
+												<p><%= link_to "Share on Twitter", style: "margin-left: 45% !important;" "http://twitter.com/home?status=#{@blog.title} #{@blog.description} #{blog_url(@blog)}" %></p>
+											</div>
+										</div>
+										</div>
+										</div>
+										</div>
+										</div>
+										</div>
+										</section>
+										</div>
+										</div>

@@ -1,0 +1,62 @@
+
+<!--Layout 1-->
+<!--<div class="container" style="margin-left: 35%;-->
+<!--    margin-top: 8%;">-->
+                           
+<!--                        <div class="category row" style="padding-right: 70%;">-->
+<!--                            <section>-->
+<!--                                <% Category.order('name ASC').each do |category| %>-->
+<!--                                <div class="category-preview col-xs-6 ">-->
+<!--                                    <h2><%= category.name %></h2>-->
+<!--                                    <a href="category.html"><%= image_tag category.image.url(:medium) %></a>-->
+<!--                                </div>-->
+<!--                            </section>-->
+<!--                            <% end %>-->
+<!--                        </div>-->
+<!--</div>-->
+
+<!--Layout 2-->
+
+<!--<h2>6-4-3 grid example<p class="lead">6 columns on desktop, 4 columns on tablets, 3 columns on phones</p></h2>-->
+<!--  <div class="row" style="">-->
+<!--      <% Category.order('name ASC').each do |category| %>-->
+<!--    <div class="col-lg-2 col-sm-3 col-xs-4">-->
+<!--        <a href="#">-->
+<!--           <%= image_tag category.image.url(:medium), {:class => "thumbnail img-responsive"} %>-->
+<!--        </a>-->
+<!--    </div>-->
+<!--    <% end %>-->
+<!--  </div>-->
+<!--  <hr>-->
+<!--  <br><br>-->
+
+<!--Layout 3-->
+
+<section id="photos">
+    <% Category.order('name ASC').each do |category| %>
+    <div class="hovereffect">
+        <%= image_tag category.image.url(:medium), {:class => "img-responsive"} %>
+        <div class="overlay">
+            <h2><%= category.name %> </h2>
+			<p> 
+			<a href="#"><%= category.name %></a>
+			</p> 
+        </div>
+    </div>
+    <% end %>
+
+<script>
+    function getRandomSize(min, max) {
+  return Math.round(Math.random() * (max - min) + min);
+}
+
+var allImages = "";
+
+for (var i = 0; i < 1; i++) {
+  var width = getRandomSize(200, 400);
+  var height =  getRandomSize(200, 400);
+  allImages += '<img src="https://placekiten.com/'+width+'/'+height+'" alt="pretty kitty">';
+}
+
+$('#photos').append(allImages);
+</script>
