@@ -444,7 +444,7 @@ END BASICS (BODY, HEADERS, LINKS, ETC)
     display: block;
     width: 18px;
     overflow: hidden;
-    background: URL(../images/socialmedia.png) no-repeat 0 1px!important;
+    /*background: URL(../images/socialmedia.png) no-repeat 0 1px!important;*/
     padding: 0px!important;
 }
 .socialmedia ul li a.behence {
@@ -1167,7 +1167,7 @@ figure.big .contentRight .post {
     height: 24px;
     overflow: hidden;
     text-indent: -9999px;
-    background: URL(../images/socialmedia.png) no-repeat 0 1px;
+    /*background: URL(../images/socialmedia.png) no-repeat 0 1px;*/
     padding: 0px!important;
 }
 .contentRight .socialmedia li a.behence {
