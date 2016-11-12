@@ -1508,7 +1508,7 @@ END ABOUT US
     position: absolute;
     bottom: 20px;
     right: -4000px;
-    background: URL(../images/moreimages.png) no-repeat 0 0;
+    /*background: URL(../images/moreimages.png) no-repeat 0 0;*/
     color: #fff;
     padding: 7px 10px;
     z-index: 100;
