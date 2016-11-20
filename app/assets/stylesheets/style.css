@@ -3371,7 +3371,7 @@ screen and (max-device-width: 660px) and (min-device-width: 400px) and (orientat
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
-    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 .contact-info {
     padding: 100px 0 0;

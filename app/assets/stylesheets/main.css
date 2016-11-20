@@ -45,13 +45,6 @@ a:hover {
     background-color: transparent !important;
 }
 
-
-.callpost {
-     background-image: image-url("<%= image_tag category.image.url(:medium) %>");
-     background-position: center;
-}
-
-
 .container{
   height: 100%;
 }
