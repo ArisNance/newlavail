@@ -82,12 +82,12 @@ Rails.application.configure do
   
 #   aws storage
 config.paperclip_defaults = {
-  storage: :s3,
-  s3_credentials: {
-    bucket: ENV.fetch(lavail),
-    access_key_id: ENV.fetch(AKIAJBROJBFAAVVCH4KA),
-    secret_access_key: ENV.fetch(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),
-    s3_region: ENV.fetch(Oregon),
+  :storage => :s3,
+  :s3_credentials => {
+  :bucket => ENV['lavail'],
+  :access_key_id => ENV['AKIAJBROJBFAAVVCH4KA'],
+  :secret_access_key => ENV['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'],
+  :s3_region => ENV['Oregon']
   }
 }
 end
