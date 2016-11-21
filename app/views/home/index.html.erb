@@ -9,11 +9,16 @@
                 <a href="#"><%= link_to 'Home', root_path, {:class => "logo-show"} %></a></h1> <a class="mobilemenu">View Menu</a> <a class="bt-menu-trigger" id="menu" onclick="landingpagecube();" href="#"><span>Menu</span></a> </div>
 		<nav id="menumobile">
 			<ul>
+				<% if current_user && current_user.admin? %>
+				<li><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>
+				<li><%= link_to 'Admin', rails_admin.dashboard_path %></li>
+				<% else %>
 				<li><a href="#" onclick="thumbnailscube();">CATEGORIES</a> </li>
 				<!--<li><a href="#" onclick="blogcube()">TRAVEL</a> </li>-->
 				<li><a href="#" onclick="teamcube()">BLOGS</a> </li>
 				<li><a href="#" onclick="aboutcube();">ABOUT</a> </li>
 				<li><a href="#" onclick="contactcube();">CONTACT</a> </li>
+				<% end %>
 			</ul>
 			<div class="footer">
 				<ul class="socialpost">
@@ -30,11 +35,17 @@
 			<div class="overlay">
 				<nav id="menu">
 					<ul>
+						<% if current_user && current_user.admin? %>
+						<li><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>
+						<li><%= link_to 'Admin', rails_admin.dashboard_path %></li>
+						<% else %>
 						<li><a href="#" onclick="thumbnailscube();">CATEGORIES</a> </li>
 						<!--<li><a href="#" onclick="blogcube()">TRAVEL</a> </li>-->
 						<li><a href="#" onclick="teamcube()">BLOGS</a> </li>
 						<li><a href="#" onclick="aboutcube();">ABOUT</a> </li>
 						<li><a href="#" onclick="contactcube();">CONTACT</a> </li>
+						
+						<% end %>
 					</ul>
 				</nav>
 			</div>
