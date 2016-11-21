@@ -164,7 +164,7 @@ END BASICS (BODY, HEADERS, LINKS, ETC)
 
 .logo-show{
     display: block;
-    background-image: url('LLAVAIL.jpg');
+    background-image:url('<%= image_tag("LLAVAIL.png") %> ');
 	background-size: cover;
     margin-left: 30px;
     background-color: #F60600;

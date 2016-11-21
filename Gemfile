@@ -31,6 +31,8 @@ gem 'paperclip', '~> 5.1'
 gem 'bootsy'
 # Admin text editor
 gem 'tinymce-rails'
+# amazon storage
+gem 'aws-sdk', '~> 2.5', '>= 2.5.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
