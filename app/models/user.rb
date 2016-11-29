@@ -1,4 +1,4 @@
-#for retrieving the image from the remote url
+#For retrieving the image from the remote url
 require 'open-uri' 
 
 class User < ActiveRecord::Base
