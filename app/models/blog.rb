@@ -1,3 +1,7 @@
+#For retrieving the image from the remote url
+require 'open-uri' 
+
+
 class Blog < ActiveRecord::Base
     belongs_to :user
     belongs_to :category
@@ -8,5 +12,8 @@ class Blog < ActiveRecord::Base
     
     validates_attachment_content_type :image,
     :content_type => /\Aimage\/.*\z/
-
+    
+    def avatar_from_url(url)
+    self.avatar = open(url)
+    end
 end
