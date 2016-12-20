@@ -16,7 +16,8 @@ class Blog < ActiveRecord::Base
                     }
                       :s3_credentials => Proc.new{|a| a.instance.s3_credentials }
                       :storage => :s3
-                      
+                  end
+                  
     def s3_credentials
     {:bucket => 'lavail', :access_key_id => 'AKIAJBROJBFAAVVCH4KA', :secret_access_key => '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'}
     end
