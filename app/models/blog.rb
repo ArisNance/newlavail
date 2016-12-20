@@ -13,8 +13,9 @@ class Blog < ActiveRecord::Base
                       :medium => "300x300>",
                       :thumb => "100x100>"
                     }
+                      :storage => :s3,
                       :s3_credentials => Proc.new{|a| a.instance.s3_credentials }
-                      :storage => :s3
+                      
 
     def s3_credentials
     {:bucket => 'lavail', :access_key_id => 'AKIAJBROJBFAAVVCH4KA', :secret_access_key => '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'}
