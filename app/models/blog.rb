@@ -10,14 +10,13 @@ class Blog < ActiveRecord::Base
     attachment_size: { less_than: 5.megabytes }
     
     has_attached_file :image,
-                      :storage => :s3,
                       :styles => { 
-                      :medium "300x300>",
-                      :thumb "100x100>",
-                      :s3_credentials => Proc.new{|a| a.instance.s3_credentials }
+                      :medium => "300x300>",
+                      :thumb => "100x100>"
                     }
-
-    
+                      :s3_credentials => Proc.new{|a| a.instance.s3_credentials }
+                      :storage => :s3
+                      
     def s3_credentials
     {:bucket => 'lavail', :access_key_id => 'AKIAJBROJBFAAVVCH4KA', :secret_access_key => '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'}
     end
