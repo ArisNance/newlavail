@@ -15,8 +15,6 @@ class Blog < ActiveRecord::Base
                       :styles => { :medium => "300x300>",
                       :thumb => "100x100>",
                     }
-                end
-
 
     
     def s3_credentials
