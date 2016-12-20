@@ -20,9 +20,7 @@
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
-  <div class="field">
-	  <%= url_field(:blog, :image) %>
-  </div>
+
   <div class="form-group">
   <%= f.label :category %>
   <%= f.collection_select :category_id, Category.all, :id, :name, {

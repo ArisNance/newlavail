@@ -78,4 +78,13 @@ class BlogsController < ApplicationController
       @blog = current_user.blogs.find_by(id: params[:id])
         redirect_to blogs_path, notice: "Not allowed to edit this blog" if @blog.nil?
     end
+    
+    # File actionview/lib/action_view/helpers/text_helper.rb, line 438
+    def split_paragraphs(text)
+      return [] if text.blank?
+
+        text.to_str.gsub(/\r\n?/, "\n").split(/\n\n+/).map! do |t|
+        t.gsub!(/([^\n]\n)(?=[^\n])/, '\1<br />') || t
+      end
+    end
 end

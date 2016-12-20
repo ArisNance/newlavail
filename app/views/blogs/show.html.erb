@@ -89,14 +89,14 @@
 									<br>
 									<br>
 									<div class="col-md-6">
-										<div class="blogdata"> <span class="firstharacter"><span class="infodivider">/</span><b><%= link_to "Tweet", "http://twitter.com/home?status=#{@blog.title} #{@blog.description} #{blog_url(@blog)}" %></b><span class="infodivider">/</span></span><%= @blog.content %>
+										<div class="blogdata"> <span class="firstharacter"><span class="infodivider">/</span><b><%= link_to "Tweet", "http://twitter.com/home?status=#{@blog.title} #{@blog.description} #{blog_url(@blog)}" %></b><span class="infodivider">/</span></span><%= raw simple_format( @blog.content) %>
 											<br>
 											<br>
 											<div class="blog-short-info"></div>
 											<br>  </div>
 									</div>
 									<div class="col-md-6">
-										<div class="blogdata"><%=raw @blog.content %></div>
+										<!--<div class="blogdata"><%=raw @blog.content %></div>-->
 									</div>
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 comments-section">
 										<div class="comment featured-cmt">
