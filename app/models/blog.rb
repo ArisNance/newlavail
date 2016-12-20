@@ -13,7 +13,7 @@ class Blog < ActiveRecord::Base
                       :storage => :s3,
                       :s3_credentials => Proc.new{|a| a.instance.s3_credentials }
                       :styles => { :medium => "300x300>",
-                      :thumb => "100x100>",
+                      :thumb => "100x100>"
                     }
 
     
