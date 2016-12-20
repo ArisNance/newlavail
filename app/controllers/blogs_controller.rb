@@ -21,6 +21,7 @@ class BlogsController < ApplicationController
 
   # GET /blogs/1/edit
   def edit
+    @blog = current_user.blogs.build(blog_params)
   end
 
   # POST /blogs
