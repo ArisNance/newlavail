@@ -1,5 +1,4 @@
 #For retrieving the image from the remote url
-require 'open-uri' 
 class Blog < ActiveRecord::Base
     
     belongs_to :user
