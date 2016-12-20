@@ -88,6 +88,7 @@ config.paperclip_defaults = {
   :bucket => ENV['lavail'],
   :access_key_id => ENV['AKIAJBROJBFAAVVCH4KA'],
   :secret_access_key => ENV['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'],
+  :s3_region => ENV['Oregon']
   }
 }
 end
