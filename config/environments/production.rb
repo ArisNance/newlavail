@@ -88,7 +88,7 @@ config.paperclip_defaults = {
   :bucket => ENV['lavail'],
   :access_key_id => ENV['AKIAJBROJBFAAVVCH4KA'],
   :secret_access_key => ENV['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'],
-  :s3_region => ENV['s3-us-west-2.amazonaws.com']
+  :s3_region => ENV['us-west-2']
   }
 }
 end
