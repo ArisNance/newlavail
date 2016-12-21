@@ -25,7 +25,7 @@ body {
 
 @media screen and (max-width: 500px) and (min-width: 200px), screen and (max-device-width: 500px) and (min-device-width: 200px){
 .cCustom {
-    width: 113% !important;
+    width: 130% !important;
     margin-left: -16% !important;
 }
 }
