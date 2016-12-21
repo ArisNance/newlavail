@@ -5,7 +5,7 @@ class Blog < ActiveRecord::Base
     belongs_to :category
     
     validates :image,
-    attachment_content_type: { content_type: /\Aimage\/.*\Z/ },
+    attachment_content_type: { content_type: /\Aimage\/.*\Z/ }
 
     has_attached_file :image,
                       :storage => :s3,
