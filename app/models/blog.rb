@@ -8,15 +8,9 @@ class Blog < ActiveRecord::Base
     attachment_content_type: { content_type: /\Aimage\/.*\Z/ }
 
     has_attached_file :image,
-                      :storage => :s3,
-                      :s3_credentials => Proc.new{|a| a.instance.s3_credentials },
                       :styles => { 
                       :medium => "300x300>",
                       :thumb => "100x100>"
                     }
-
-
-    def s3_credentials
-    {:bucket => 'lavail', :access_key_id => 'AKIAJBROJBFAAVVCH4KA', :secret_access_key => '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'}
-    end
+                    
 end

@@ -1,7 +1,7 @@
 class AddAttachmentToCategories < ActiveRecord::Migration
   def self.up
     change_table :categories do |t|
-      t.attachment :image
+      add_attachment :categories, :image
     end
   end
 

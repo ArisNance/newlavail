@@ -1,17 +1,14 @@
-#For retrieving the image from the remote url
-require 'open-uri' 
-
 class Category < ActiveRecord::Base
-  has_many :blogs, dependent: :nullify
   
-  has_attached_file :image,
-    :styles => { :medium => "1645x1095>",
-    :thumb => "100x100>" }
+  has_many :blogs, dependent: :nullify
      
-  validates_attachment_content_type :image,
-    :content_type => /\Aimage\/.*\z/
-    
-  def image_from_url(url)
-    self.avatar = open(url)
-  end
+  validates :image,
+    attachment_content_type: { content_type: /\Aimage\/.*\Z/ }
+
+    has_attached_file :image,
+                      :styles => { 
+                      :medium => "1645x1095>",
+                      :thumb => "100x100>"
+                    }
+
 end
