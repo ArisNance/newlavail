@@ -84,7 +84,6 @@ Rails.application.configure do
 #   aws storage
 config.paperclip_defaults = {
   :storage => :s3,
-  :s3_region => ENV['Oregon'],
   :s3_credentials => {
   :bucket => ENV['lavail'],
   :access_key_id => ENV['AKIAJBROJBFAAVVCH4KA'],
