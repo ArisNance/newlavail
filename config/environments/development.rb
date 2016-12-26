@@ -41,4 +41,15 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {
     host: 'localhost', port: 3000
   }
+  
+  #   aws storage development
+config.paperclip_defaults = {
+  :storage => :s3,
+  :s3_credentials => {
+  :bucket => 'mylavailbucket',
+  :access_key_id => 'AKIAIEMNN7BAULT3LJZQ',
+  :secret_access_key => 'OVwh8rhnsk5UFIuqYMC2sCeILWYKV7We3IH9GrFZ+fhZH+hquYxUqfyzdkVYD',
+  :s3_region => 'mylavailbucket.s3.amazonaws.com'
+  }
+}
 end
