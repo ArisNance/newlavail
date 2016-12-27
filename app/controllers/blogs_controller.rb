@@ -87,4 +87,6 @@ class BlogsController < ApplicationController
         t.gsub!(/([^\n]\n)(?=[^\n])/, '\1<br />') || t
       end
     end
+    
+    
 end

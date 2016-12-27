@@ -1,0 +1,12 @@
+development:
+  access_key_id: "AKIAIEMNN7BAULT3LJZQ"
+  secret_access_key: "OVwh8rhnsk5UFIuqYMC2sCeILWYKV7We3IH9GrFZ+fhZH+hquYxUqfyzdkVYD"
+  s3_region: "mylavailbucket.s3.amazonaws.com"
+  
+# test:
+#   access_key_id: abc...
+#   secret_access_key: abc...
+
+production:
+  access_key_id: "AKIAIEMNN7BAULT3LJZQ"
+  secret_access_key: "OVwh8rhnsk5UFIuqYMC2sCeILWYKV7We3IH9GrFZ+fhZH+hquYxUqfyzdkVYD"

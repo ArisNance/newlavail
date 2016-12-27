@@ -46,10 +46,12 @@ Rails.application.configure do
 config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
-  :bucket => 'mylavailbucket',
-  :access_key_id => 'AKIAIEMNN7BAULT3LJZQ',
-  :secret_access_key => 'OVwh8rhnsk5UFIuqYMC2sCeILWYKV7We3IH9GrFZ+fhZH+hquYxUqfyzdkVYD',
-  :s3_region => 'mylavailbucket.s3.amazonaws.com'
+  :bucket => ENV['mylavailbucket'],
+  :access_key_id => ENV['AKIAIEMNN7BAULT3LJZQ'],
+  :secret_access_key => ENV['OVwh8rhnsk5UFIuqYMC2sCeILWYKV7We3IH9GrFZ+fhZH+hquYxUqfyzdkVYD'],
+  :s3_region => ENV['mylavailbucket.s3.amazonaws.com']
   }
 }
+
+
 end
