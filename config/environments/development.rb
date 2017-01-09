@@ -43,15 +43,8 @@ Rails.application.configure do
   }
   
   #   aws storage development
-config.paperclip_defaults = {
-  :storage => :s3,
-  :s3_credentials => {
-  :bucket => ENV['mylavailbucket'],
-  :access_key_id => ENV['AKIAIEMNN7BAULT3LJZQ'],
-  :secret_access_key => ENV['OVwh8rhnsk5UFIuqYMC2sCeILWYKV7We3IH9GrFZ+fhZH+hquYxUqfyzdkVYD'],
-  :s3_region => ENV['mylavailbucket.s3.amazonaws.com']
+ config.paperclip_defaults = {
+  :s3_credentials => "#{Rails.root}/config/s3.yml"
   }
-}
-
 
 end
