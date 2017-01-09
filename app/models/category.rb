@@ -7,6 +7,8 @@ class Category < ActiveRecord::Base
     
   has_attached_file :image, 
                     :s3_credentials => "#{Rails.root}/config/s3.yml",
+                    :path => ':rails_root/public/system/:class/:id/:style/:filename',
+                    :url => '/system/:class/:id/:style/:filename',
                     :styles => { 
                     :medium => "1645x1095>", 
                     :thumb => "100x100>" 

@@ -106,6 +106,8 @@ body {
     display: block;
     background-color: #000;
 }
+
+
 .no-gutter [class*='col-'] {
     padding-right: 0;
     padding-left: 0;
@@ -120,6 +122,7 @@ END BASICS (BODY, HEADERS, LINKS, ETC)
 /*
 3. WRAPER
 */
+
 
 #wraper {
     height: 100%;

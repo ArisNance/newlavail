@@ -100,12 +100,12 @@
 									</div>
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 comments-section">
 										<div class="comment featured-cmt">
-											<div class="comt-pic"><%= image_tag @blog.user.avatar.url(:thumb), style: "float: none;" %></div>
+										
 											<div class="comt-author">
 												<h4><%= @blog.user.name %></h4> <span class="comt-date"><%= @blog.created_at.strftime("%d %b. %Y"); %></span> </div>
-											<div class="comt-txt">
-												<p><%= link_to "Share on Twitter", style: "margin-left: 45% !important;" "http://twitter.com/home?status=#{@blog.title} #{@blog.description} #{blog_url(@blog)}" %></p>
-											</div>
+											<!--<div class="comt-txt">-->
+											<!--	<p><%= link_to "Share on Twitter", style: "margin-left: 45% !important;" "http://twitter.com/home?status=#{@blog.title} #{@blog.description} #{blog_url(@blog)}" %></p>-->
+											<!--</div>-->
 										</div>
 										</div>
 										</div>
