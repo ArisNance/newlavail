@@ -8,6 +8,7 @@ class Category < ActiveRecord::Base
   has_attached_file :image,
                     :s3_credentials => "#{Rails.root}/config/s3.yml",
                     :s3_host_name => "s3-us-west-2.amazonaws.com",
+                    :region => "us-west-2",
                     :styles => { 
                     :medium => "1645x1095>", 
                     :thumb => "100x100>" 
