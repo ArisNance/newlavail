@@ -9,4 +9,4 @@ production:
   access_key_id: "AKIAIEMNN7BAULT3LJZQ"
   secret_access_key: "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"
   bucket: "mylavailbucket"
-  region: "mylavailbucket.s3.amazonaws.com"
+  region: "http://mylavailbucket.s3.amazonaws.com"
