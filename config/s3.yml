@@ -3,7 +3,7 @@ development:
   secret_access_key: "OVwh8rhnsk5UFIuqYMC2sCeILWYKV7We3IH9GrFZ"
   bucket: "mylavailbucket"
   region: "us-west-2"
-  s3_host_name: "https://s3-us-west-2.amazonaws.com/mylavailbucket"
+  s3_host_name: "https://s3.amazonaws.com"
 
 
 production:
