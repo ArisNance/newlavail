@@ -75,9 +75,19 @@
 }
 
 </style>
+<a><%= link_to 'Home', root_path, {:class => "logo-show"} %><a class="next"></a>
+<!--blog header image-->
+        <div class="grid intro valign-wrapper no-margin center img-responsive" style="background-image: url('<%= @blog.image.url %>');background-position: center !important; background-repeat: no-repeat; background-size: cover !important; height: 700px; ">
+
+            </div>
+<!--header end-->
 <div class="cCustom">
 <div class="container">
-<section> <%= link_to 'Home', root_path, {:class => "logo-show"} %><a class="next"></a>
+
+<section> 
+
+<!--<%= link_to 'Home', root_path, {:class => "logo-show"} %><a class="next"></a>-->
+
 					<div class="contentRight">
 						<div class="postcontentarea">
 							<div class="post">
@@ -86,10 +96,8 @@
 										<h2 class="blogtitle"><%= @blog.title %></h2>
 										<div class="blogmetainfo">Published by: <b><%= @blog.user.name %></b> <span class="infodivider">/</span><%= @blog.created_at.strftime("%d %b. %Y"); %>  <span class="infodivider">/</span><%= link_to "Tweet", "http://twitter.com/home?status=#{@blog.title} #{@blog.description} #{blog_url(@blog)}" %></div>
 									</div>
-									<br>
-									<br>
 									<div class="col-md-6">
-										<div class="blogdata"> <span class="firstharacter"><span class="infodivider">/</span><b><%= link_to "Tweet", "http://twitter.com/home?status=#{@blog.title} #{@blog.description} #{blog_url(@blog)}" %></b><span class="infodivider">/</span></span><%= raw simple_format( @blog.content) %>
+										<div class="blogdata"><%= raw simple_format( @blog.content) %>
 											<br>
 											<br>
 											<div class="blog-short-info"></div>
@@ -98,6 +106,7 @@
 									<div class="col-md-6">
 										<!--<div class="blogdata"><%=raw @blog.content %></div>-->
 									</div>
+									<!--footer section-->
 									<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 comments-section">
 										<div class="comment featured-cmt">
 										
