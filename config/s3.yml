@@ -2,13 +2,11 @@ development:
   access_key_id: "AKIAIEMNN7BAULT3LJZQ"
   secret_access_key: "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"
   bucket: "mylavailbucket"
-  region: "us-west-2"
-  s3_host_name: "https://s3.amazonaws.com"
+  s3_region: "us-west-2"
 
 
 production:
   access_key_id: "AKIAIEMNN7BAULT3LJZQ"
   secret_access_key: "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"
   bucket: "mylavailbucket"
-  region: "http://mylavailbucket.s3.amazonaws.com"
-  s3_host_name: "https://s3-us-west-2.amazonaws.com/mylavailbucket"
+  s3_region: "us-west-2"

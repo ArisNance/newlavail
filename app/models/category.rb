@@ -6,10 +6,7 @@ class Category < ActiveRecord::Base
     attachment_content_type: { content_type: /\Aimage\/.*\Z/ }
     
   has_attached_file :image,
-                    :s3_credentials => "#{Rails.root}/config/s3.yml",
-                    :s3_host_name => "https://s3.amazonaws.com",
-                    :region => "us-west-2",
-                    :path_style => true,
+                    # :s3_credentials => "#{Rails.root}/config/s3.yml",
                     :styles => { 
                     :medium => "1645x1095>", 
                     :thumb => "100x100>" 
