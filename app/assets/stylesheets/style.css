@@ -554,7 +554,7 @@ END HEADER
 #thumbnails {
     clear: both;
     background: #000;
-    z-index: 10;
+    z-index: 100;
     /*Attempt to make the panels full width*/
     margin-left: -1.2%;
     width: 103%;
