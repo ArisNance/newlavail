@@ -193,7 +193,7 @@ END BASICS (BODY, HEADERS, LINKS, ETC)
     text-decoration: none;
     text-indent: -9999px;
     overflow: hidden;
-    height: 70px;
+    height: 70px !important;
     margin-top: 0px;
     float: left;
     width: 35px;
@@ -558,13 +558,15 @@ END HEADER
     /*Attempt to make the panels full width*/
     margin-left: -1.2%;
     width: 103%;
+    letter-spacing: 5.5px !important;
 }
 
 #thumbnails * {
     -webkit-transition: all 0.8s ease-in-out;
     -moz-transition: all 0.8s ease-in-out;
     -o-transition: all 0.8s ease-in-out;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out
+    
 }
 /*
 	END PORTFOLIO THUMBS

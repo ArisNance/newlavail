@@ -1,7 +1,9 @@
 	
 	
 	<div id="thumbnails" class="pt-page  pt-page-current">
+		<a><%= link_to 'Home', root_path, {:class => "logo-show", :style => "margin-left: 5%;"} %><a class="next"></a>
 			<div class="scalediv">
+				
 				<div class="row no-gutter" data-id="one">
 					<% blogs.each do |blog| %>
 					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
