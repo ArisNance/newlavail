@@ -151,6 +151,7 @@ END BASICS (BODY, HEADERS, LINKS, ETC)
     position: fixed;
     width: 100%;
     z-index: 10;
+    height: 70px !important;
 }
 #top-bar h1 {
     float: left;
@@ -169,7 +170,23 @@ END BASICS (BODY, HEADERS, LINKS, ETC)
 
 .logo-show{
     display: block;
-    background-image:url('<%= image_tag("LLAVAIL.png") %> ');
+    background-image:url('LLAVAIL.jpg');
+	background-size: cover;
+    margin-left: 30px;
+    background-color: #F60600;
+    text-decoration: none;
+    text-indent: -9999px;
+    overflow: hidden;
+    height: 70px;
+    margin-top: 0px;
+    float: left;
+    width: 35px;
+    position: fixed;
+}
+
+.logo-show-home{
+    display: block;
+    background-image:url('LLAVAIL.jpg');
 	background-size: cover;
     margin-left: 30px;
     background-color: #F60600;
