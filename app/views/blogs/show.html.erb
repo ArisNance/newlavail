@@ -94,7 +94,7 @@
 								<div class="content-r-inner">
 									<div class="blogheader"><%= link_to 'Back', blogs_path %>
 										<h2 class="blogtitle"><%= @blog.title %></h2>
-										<div class="blogmetainfo">Published by: <b><%= @blog.user.name %></b> <span class="infodivider">/</span><%= @blog.created_at.strftime("%d %b. %Y"); %>  <span class="infodivider">/</span><%= link_to "Tweet", "http://twitter.com/home?status=#{@blog.title} #{@blog.description} #{blog_url(@blog)}" %></div>
+										<div class="blogmetainfo">Published by: <b><%= @blog.user.name %></b> <span class="infodivider">/</span><%= @blog.created_at.strftime("%d %b. %Y"); %>  <span class="infodivider">/</span><%= link_to "Tweet", "http://twitter.com/home?status=#{@blog.description} #{blog_url(@blog)}" %></div>
 									</div>
 									<div class="col-md-6">
 										<div class="blogdata"><%= raw simple_format( @blog.content) %>
