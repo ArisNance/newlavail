@@ -10,7 +10,7 @@ class Blog < ActiveRecord::Base
     has_attached_file :image,
                     #   :s3_credentials => "#{Rails.root}/config/s3.yml",
                       :styles => { 
-                      :medium => "300x300>",
+                      :medium => "1645x1095>",
                       :thumb => "100x100>"
                     }
                     
