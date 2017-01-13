@@ -122,10 +122,30 @@ footer {
 
 .fp-content{
   padding-top: 12px;
-  margin-left: 2%;
+  margin-left: 4%;
   color: #fff;
   letter-spacing: 3.5px;
   opacity: 0.8;
+}
+
+/*iphone 6/7 plus*/
+@media (max-width: 414px) {
+  /* line 4, ../sass/partials/_alt-home.sass */
+  .fp-content {
+    padding-top: 14px;
+    font-size: 10px;
+    margin-left: 4%
+  }
+}
+
+/*iphone 6/7*/
+  @media (max-width: 375px) {
+  /* line 4, ../sass/partials/_alt-home.sass */
+  .fp-content {
+    padding-top: 17px;
+    font-size: 10px;
+    margin-left: 10%;
+  }
 }
 
 /*Animated Card*/
