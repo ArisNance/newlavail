@@ -6,29 +6,7 @@
 			<h1 class="logo">
                 <a><%= link_to 'Home', root_path, {:class => "logo-show", style: "margin-left: 5%; z-index: 100;"} %></a></h1> 
                 <a class="mobilemenu">View Menu</a> <a class="bt-menu-trigger" id="menu" onclick="landingpagecube();" href="#"><span>Menu</span></a> </div>
-		<nav id="menumobile">
-			<ul>
-				<% if current_user && current_user.admin? %>
-				<li><%= link_to 'Logout', destroy_user_session_path, :method => :delete %></li>
-				<li><%= link_to 'Admin', rails_admin.dashboard_path %></li>
-				<% else %>
-				<li><a href="#" onclick="thumbnailscube();">CATEGORIES</a> </li>
-				<!--<li><a href="#" onclick="blogcube()">TRAVEL</a> </li>-->
-				<li><a href="#" onclick="teamcube()">BLOGS</a> </li>
-				<li><a href="#" onclick="aboutcube();">ABOUT</a> </li>
-				<li><a href="#" onclick="contactcube();">CONTACT</a> </li>
-				<% end %>
-			</ul>
-			<div class="footer">
-				<ul class="socialpost">
-					<li><a class="" href="#"><i class="fa fa-google"></i></a> </li>
-					<li><a class="" href="#"><i class="fa fa-twitter"></i></a> </li>
-					<li><a class="" href="#"><i class="fa fa-behance"></i></a> </li>
-				</ul>
-				<div class="touch">Lavail 2016 All Rights Reserved.</div>
-			</div>
-		</nav>
-		<!--Top Headerbar area ends -->
+
 		<!--<a><%= link_to 'Home', root_path, {:class => "logo-show", style: "margin-left: 5%; z-index: 100;"} %></a>-->
 		<!--<a class="mobilemenu">View Menu</a> <a class="bt-menu-trigger" id="menu" onclick="landingpagecube();" href="#"><span>Menu</span></a>-->
 			<div class="scalediv">
