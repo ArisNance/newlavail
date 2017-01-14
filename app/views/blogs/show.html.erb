@@ -31,20 +31,21 @@
 
 	<a><%= link_to 'Home', root_path, {:class => "logo-show"} %><a class="next"></a>
 <!--blog header image-->
-        <div class="grid intro valign-wrapper no-margin center img-responsive" id="blog-header-img" style="background-image: url('<%= @blog.image.url %>');background-position: center !important; background-repeat: no-repeat; background-size: cover !important; height: 700px; ">
+<!--        <div class="grid intro valign-wrapper no-margin center img-responsive" id="blog-header-img" style="background-image: url('<%= @blog.image.url %>');background-position: center !important; background-repeat: no-repeat; background-size: cover !important; height: 700px; ">-->
 
-            </div>
+<!--            </div>-->
 <!--header end-->
-<div class="cCustom" id="team">
-<div class="container pt-page-current " id="team">
+<div class="cCustom pt-page pt-page-current" id="team">
+	
+<div class="container">
 
 <section> 
 
 <!--<%= link_to 'Home', root_path, {:class => "logo-show"} %><a class="next"></a>-->
 
-					<div class="contentRight" id="team">
-						<div class="postcontentarea" id="team">
-							<div class="post" id="team">
+					<div class="contentRight">
+						<div class="postcontentarea">
+							<div class="post">
 								<div class="content-r-inner">
 									<div class="blogheader"><%= link_to 'Back', blogs_path %>
 										<h2 class="blogtitle"><%= @blog.title %></h2>
