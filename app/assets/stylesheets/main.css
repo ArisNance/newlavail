@@ -148,6 +148,16 @@ footer {
   }
 }
 
+/*blog-header-img*/
+ @media (max-width: 375px) {
+  /* line 4, ../sass/partials/_alt-home.sass */
+  #blog-header-img {
+  height: 250px !important;
+  
+  }
+}
+
+
 /*Animated Card*/
 .thumbnail {
   margin-bottom: none !important;

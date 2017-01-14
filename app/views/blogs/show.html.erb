@@ -74,10 +74,19 @@
   margin-left: 11%;
 }
 
+/*blog-header-img*/
+ @media (max-width: 375px) {
+  /* line 4, ../sass/partials/_alt-home.sass */
+  background-image {
+  height: 250px !important;
+  
+  }
+}
+
 </style>
 <a><%= link_to 'Home', root_path, {:class => "logo-show"} %><a class="next"></a>
 <!--blog header image-->
-        <div class="grid intro valign-wrapper no-margin center img-responsive" style="background-image: url('<%= @blog.image.url %>');background-position: center !important; background-repeat: no-repeat; background-size: cover !important; height: 700px; ">
+        <div class="grid intro valign-wrapper no-margin center img-responsive" id="blog-header-img" style="background-image: url('<%= @blog.image.url %>');background-position: center !important; background-repeat: no-repeat; background-size: cover !important; height: 700px; ">
 
             </div>
 <!--header end-->
