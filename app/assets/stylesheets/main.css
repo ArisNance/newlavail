@@ -116,7 +116,7 @@ body {
 /*footer info*/
 footer {
   margin-top: -15px;
-  height: 50px;
+  height: 52px;
   background-color: #060606;
 }
 
@@ -162,9 +162,9 @@ footer {
   cursor: default;
   /*background: #42b078;*/
 }
-    .callpost{
-        height: 427.5px !important
-    }
+.callpost{
+  height: 427.5px !important
+  }
     
 .hovereffect .overlay {
   width: 100%;
