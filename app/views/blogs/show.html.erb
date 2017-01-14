@@ -1,68 +1,10 @@
-<!--<p id="notice"><%= notice %></p>-->
-
-
-<!--<%= link_to 'Edit', edit_blog_path(@blog) %> |-->
-<!--<%= link_to 'Back', blogs_path %>-->
-<!--    <body>-->
-        <!-- if the user has javascript disabled they can still use the menu -->
-<!--        <div class="grid intro valign-wrapper no-margin center img-responsive" style="background-image: url('<%= @blog.image.url %>');background-position: center !important; background-repeat: no-repeat; background-size: cover !important; height: 800px; margin-top: 2% !important;">-->
-<!--            <div class="row blog-header">-->
-<!--                <h3 class="blogT"><%= @blog.title %></h3>-->
-<!--                <h5 class="blogD"><%= @blog.description %></h5>-->
-<!--            </div>-->
-<!--         </div>-->
-
-<!--        <main class="">-->
-<!--            <div class="row">-->
-<!--                <div class="col-xs-12 single-content">-->
-<!--                    <p class="meta">-->
-
-
-<!--                    <h1><%= link_to @blog.title, blog_path  %></h1>-->
-<!--                    <% if current_user %>-->
-<!--                    <%= link_to 'Edit', edit_blog_path(@blog) %> |-->
-<!--                    <%= link_to 'Back', blogs_path %>-->
-<!--                    <% else %>-->
-<!--                    <% end %>-->
-<!--                    <p class="subtitle"><%= @blog.description %></p>-->
-
-<!--                    <p><%= @blog.content %></p>-->
-
-<!--                </div><!-- main-content/col -->
-<!--            </div> <!--/row -->
-
-<!--        </main> <!-- / -->
-
-<!--        <footer class="single">-->
-<!--            <div class="">-->
-<!--                <div class="row">-->
-<!--                    <div class="col-xs-12 col-sm-2">-->
-<!--                        <img src="img/profile-1.jpg" class="user-icon " alt="user-image">-->
-<!--                    </div>-->
-<!--                    <div class="col-xs-12 col-sm-6">-->
-<!--                        <div class="category-list">-->
-<!--                            <p>Published By: <%= link_to @blog.user.name, static_pages_author_path(@blog.user) %></p><span><%= @blog.created_at.strftime("%d %b. %Y"); %></span></p>-->
-                            
-                          <!--username-->
-<!--                            <h6><%= link_to "Share on Twitter", "http://twitter.com/home?status=#{@blog.title} #{blog_url(@blog)}" %></h6>-->
-<!--                        </div>-->
-<!--                    </div><!-- end col -->
-<!--                    <div class="col-xs-12 col-sm-4">-->
-<!--                        <div class="social">-->
-<!--                            <p>give a cup of coffee.</a>-->
-<!--                            <div class="social-links">-->
-<!--                                <a class="social-icon" href="#" data-platform="twitter" data-message="Message about this post" data-url="http://writertheme.com/post"><i class="fa fa-twitter"></i></a>-->
-
-<!--                                <a class="social-icon" href="#" data-platform="facebook" data-message="Message about this post" data-url="http://writertheme.com/post"><i class="fa fa-facebook-official"></i></a>-->
-
-<!--                                <a class="social-icon" data-platform="mail"  href="mailto:support@writertheme.com"><i class="fa fa-envelope"></i></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div><!-- end row -->
-<!--            </div>-->
-<!--        </footer>-->
-<style>
+	<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  
+  <style>
     @media (min-width: 400px) {
   /* line 31, ../sass/_type.sass */
   .cCstom {
@@ -84,7 +26,10 @@
 }
 
 </style>
-<a><%= link_to 'Home', root_path, {:class => "logo-show"} %><a class="next"></a>
+</head>
+<body>
+<div id="team">
+	<a><%= link_to 'Home', root_path, {:class => "logo-show"} %><a class="next"></a>
 <!--blog header image-->
         <div class="grid intro valign-wrapper no-margin center img-responsive" id="blog-header-img" style="background-image: url('<%= @blog.image.url %>');background-position: center !important; background-repeat: no-repeat; background-size: cover !important; height: 700px; ">
 
@@ -133,3 +78,6 @@
 										</section>
 										</div>
 										</div>
+										</div>
+									</body>
+								</html>
