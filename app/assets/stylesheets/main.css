@@ -148,9 +148,18 @@ footer {
   }
 }
 
-/*blog-header-img*/
+/*blog-header-img iPhone 6/7plus*/
  @media (max-width: 375px) {
   /* line 4, ../sass/partials/_alt-home.sass */
+  #blog-header-img {
+  height: 250px !important;
+  
+  }
+}
+
+/*blog-header-img* iPhone 6plus/7plus/
+  /* line 4, ../sass/partials/_alt-home.sass */
+  @media (max-width: 414px) {
   #blog-header-img {
   height: 250px !important;
   
