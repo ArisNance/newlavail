@@ -1104,7 +1104,8 @@ END PORTFOLIO
   /* line 4, ../sass/partials/_alt-home.sass */
    @media (max-width: 414px) {
   .contentRight {
-  width: 80%;
+    width: 80%;
+    margin-left: 7%;
   
   }
 }
@@ -1114,7 +1115,8 @@ END PORTFOLIO
   /* line 4, ../sass/partials/_alt-home.sass */
    @media (max-width: 375px) {
   .contentRight {
-  width: 80%;
+    width: 80%;
+    margin-left: 7%;
   
   }
 }
