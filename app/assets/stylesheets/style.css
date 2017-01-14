@@ -168,6 +168,10 @@ END BASICS (BODY, HEADERS, LINKS, ETC)
     }
 }
 
+aside{
+    display: none !important;
+}
+
 .logo-show{
     display: block;
     background-image:url('LLAVAIL.jpg');
@@ -1914,7 +1918,7 @@ END COMMENT FORM
     -webkit-overflow-scrolling: touch;
 }
 .mobilemenu {
-    background: url("../images/mobilemenu.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("mobilemenu.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     float: right;
     height: 31px;
     margin: 13px 24px;
