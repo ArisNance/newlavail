@@ -47,8 +47,11 @@
 <div class="container">
 			<div id="top-bar">
 			<h1 class="logo">
-                <a><%= link_to 'Home', root_path, {:class => "logo-show", style: "margin-left: 5%; z-index: 100;"} %></a></h1> 
+                <a><%= link_to 'Home', root_path, {:class => "logo-show", style: "margin-left: 5%; z-index: 100;"} %></a></h1>
                 <a class="mobilemenu">View Menu</a> <a class="bt-menu-trigger" id="menu" onclick="landingpagecube();" href="#"><span>Menu</span></a> </div>
+                
+              
+
 	
   <% flash.each do |name, msg| %>
     <%= content_tag(:div, msg, class: "alert alert-info") %>
