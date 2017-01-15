@@ -118,6 +118,8 @@ footer {
   margin-top: -15px;
   height: 52px;
   background-color: #060606;
+  position: fixed;
+  width: 100%;
 }
 
 .fp-content{
