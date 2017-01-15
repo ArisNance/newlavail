@@ -4,10 +4,10 @@
 	<!--Preloader area ends -->
 	<div id="wraper"> <a href="#" class="smallimg" id="smallimg">Back</a>
 		<!--Top Headerbar area starts -->
-		<div id="top-bar">
-			<h1 class="logo">
-                <a><%= link_to 'Home', root_path, {:class => "logo-show", style: "margin-left: 5%; z-index: 100;"} %></a></h1> 
-                <a class="mobilemenu">View Menu</a> <a class="bt-menu-trigger" id="menu" onclick="landingpagecube();" href="#"><span>Menu</span></a> </div>
+		<!--<div id="top-bar">-->
+		<!--	<h1 class="logo">-->
+  <!--              <a><%= link_to 'Home', root_path, {:class => "logo-show", style: "margin-left: 5%; z-index: 100;"} %></a></h1> -->
+  <!--              <a class="mobilemenu">View Menu</a> <a class="bt-menu-trigger" id="menu" onclick="landingpagecube();" href="#"><span>Menu</span></a> </div>-->
 		<nav id="menumobile">
 			<ul>
 				<% if current_user && current_user.admin? %>
@@ -165,12 +165,12 @@
 			<section>
 				<div class="contentRight">
 					<div class="content-image">
-						<!--<div class="pagetitle contentarea">-->
+						<div class="pagetitle contentarea">
 						<!--	<div class="title">Contact-->
 						<!--		<br> Me</div>-->
 						<!--	<div class="mask"></div>-->
 						<!--	<div class="pagesubtitle"></div>-->
-						<!--</div>-->
+						</div>
 					</div>
 					<div class="contentarea">
 						<div class="post">
