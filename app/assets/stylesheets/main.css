@@ -115,7 +115,7 @@ body {
 }
 /*footer info*/
 footer {
-  margin-top: -15px;
+  margin-top: -2px;
   height: 52px;
   background-color: #060606;
   position: fixed;
@@ -184,7 +184,7 @@ footer {
   /*background: #42b078;*/
 }
 .callpost{
-  height: 427.5px !important
+  height: 442.5px !important
   }
     
 .hovereffect .overlay {
