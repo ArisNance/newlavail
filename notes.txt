@@ -122,3 +122,14 @@
     </span>
     
     
+    <script src="https://use.fontawesome.com/9392177dad.js"></script>  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'style', media: 'all' %>
+
+  <!--JS-->
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+      <%= stylesheet_link_tag    'animations', media: 'all' %>
+  <%= stylesheet_link_tag    'lightbox', media: 'all' %>
+  <%= stylesheet_link_tag    'instaslide', media: 'all' %>
+  <%= stylesheet_link_tag    'jquery.simplyscroll.css', media: 'all' %>
+  <%= stylesheet_link_tag    'bootstrap.min.css', media: 'all', 'data-turbolinks-track' => true %>

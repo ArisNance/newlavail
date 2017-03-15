@@ -5,9 +5,10 @@ Rails.application.routes.draw do
   resources :blogs
   devise_for :users
   get 'users/:id' => 'users#show', as: :user
-  root 'home#index'
+  # root 'home#index'
+  root 'static_pages#landing'
   get 'static_pages/author'
-
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
