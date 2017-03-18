@@ -22,3 +22,4 @@
 config/secrets.yml
 config/s3.yml
 notes.txt
+*.yml
